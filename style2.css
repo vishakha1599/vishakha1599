@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rosybrown;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden ;
+}
+
+h1{
+    margin: 10px;
+    color: rgb(47, 18, 85);
+}
+
+.box{
+  
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transition: transform 0.8s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translate(-400%);
+}
+.box h2{
+    font-size: 45px;
+}
+@keyframes example {
+0%  {background-color: red;
+left:0px; top:0px;}
+
+25%  {background-color: rgb(54, 54, 6);
+    left:200px; top:0px;}
+
+    50%  {background-color: blue;
+        left:200px; top:200px;}
+
+        75%  {background-color: rgb(128, 0, 70);
+            left:0px; top:200px;}
+
+            100%  {background-color: red;
+                left:0px; top:0px;}
+
+
+    
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
